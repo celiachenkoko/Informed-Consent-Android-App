@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_other"
+    tools:context=".Q2">
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/quiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="44dp"
+        android:text="Teach Back Question "
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next_q1"
+        android:layout_width="107dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="247dp"
+        android:layout_marginLeft="247dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/round_button"
+        android:text="next"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editText15"
+        android:layout_width="333dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="412dp"
+
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="1. What is the purpose of the study?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="258dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/next_q1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText15"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/myblue"
+            android:clickable="true"
+            android:text="a) Visit the study site every week and have blood drawn."
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="43dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/myblue"
+            android:clickable="true"
+            android:text="b)	Determine if the study drug is safe and can reduce blood sugar."
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="224dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/myblue"
+
+            android:clickable="true"
+            android:text="c)	Determine if the study drug can cure cancer."
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="130dp" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
